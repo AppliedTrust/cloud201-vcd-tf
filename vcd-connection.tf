@@ -11,6 +11,6 @@ provider "vcd" {
 data "vcd_network_direct" "net" {
   org  = var.vcd_org
   vdc  = var.vcd_vdc
-  name = " NVEWO001-DEN11-Dir-611-01 "
+  name = "NVEWO001-DEN11-Dir-611-01"
 }
 
