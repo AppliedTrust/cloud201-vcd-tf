@@ -17,3 +17,11 @@ variable "vcd_vdc" {
 variable "vcd_url" {
   type = string
 }
+
+variable "vcd_network" {
+  type = string
+}
+
+variable "vcd_catalog" {
+  type = string
+}
