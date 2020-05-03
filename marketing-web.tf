@@ -18,13 +18,13 @@ resource "vcd_vapp_vm" "web-01" {
   template_name = data.vcd_catalog_item.ubuntu.name
   memory        = 2048
   cpus          = 2
-​
+
   metadata = {
     role    = "web"
     env     = "staging"
     Department = "Marketing"
   }
-​
+
   network {
     type               = "org"
     name               = vcd_vapp_org_network.direct-network.org_network_name
@@ -39,5 +39,5 @@ resource "vcd_vapp_vm" "web-01" {
     allow_local_admin_password = true
     auto_generate_password     = true
   }
-​
+  
 }
