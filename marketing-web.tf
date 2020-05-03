@@ -12,7 +12,7 @@ resource "vcd_vapp_org_network" "direct-network" {
 }
 
 resource "vcd_vapp_vm" "web" {
-  count         = 4
+  count         = 1
   vapp_name     = vcd_vapp.web.name
   name          = "web-${count.index}"
   catalog_name  = data.vcd_catalog_item.ubuntu.catalog
